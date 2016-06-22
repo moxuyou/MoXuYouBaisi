@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LXHADViewController">
+            <connections>
+                <outlet property="adView" destination="yt5-yO-QRN" id="q79-5B-xNy"/>
+                <outlet property="jumpBtn" destination="GP9-LO-z0X" id="ukQ-kE-i91"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="9kh-Ob-rxG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yt5-yO-QRN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-LO-z0X">
+                    <rect key="frame" x="304" y="10" width="61" height="28"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="跳过（3）"/>
+                    <connections>
+                        <action selector="jumpBtnClick" destination="-1" eventType="touchUpInside" id="l0e-58-T0K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9kh-Ob-rxG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Zq-ZM-Nw2"/>
+                <constraint firstAttribute="bottom" secondItem="yt5-yO-QRN" secondAttribute="bottom" id="4YR-gj-xoz"/>
+                <constraint firstItem="GP9-LO-z0X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="55B-B0-84r"/>
+                <constraint firstItem="yt5-yO-QRN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6o6-uu-IGA"/>
+                <constraint firstAttribute="trailing" secondItem="GP9-LO-z0X" secondAttribute="trailing" constant="10" id="M95-Gn-whM"/>
+                <constraint firstAttribute="trailing" secondItem="yt5-yO-QRN" secondAttribute="trailing" id="d6Y-CN-VVK"/>
+                <constraint firstAttribute="bottom" secondItem="9kh-Ob-rxG" secondAttribute="bottom" id="ena-EY-orL"/>
+                <constraint firstAttribute="trailing" secondItem="9kh-Ob-rxG" secondAttribute="trailing" id="iTJ-z0-fHv"/>
+                <constraint firstItem="9kh-Ob-rxG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jxz-W4-b0Y"/>
+                <constraint firstItem="yt5-yO-QRN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tr4-R1-LVl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchImage" width="320" height="480"/>
+    </resources>
+</document>
