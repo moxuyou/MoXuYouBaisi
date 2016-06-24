@@ -44,16 +44,18 @@
     self.nameLabel.text = item.name;
     self.detailNameLabel.text = item.count;
     NSURL *url = [NSURL URLWithString:item.image];
-//    [self.iconView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
-    SDWebImageDownloader *down = [SDWebImageDownloader sharedDownloader];
-    [down downloadImageWithURL:url options:SDWebImageDownloaderUseNSURLCache progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
-        UIGraphicsBeginImageContextWithOptions(self.iconView.frame.size, NO , 0);
-        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:self.iconView.frame];
-        [image drawAtPoint:CGPointZero];
-        [path addClip];
-        UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        self.iconView.image = newImage;
+    [self.iconView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        if (image !=nil) {
+            UIGraphicsBeginImageContextWithOptions(image.size, NO , 0);
+            UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+            [path addClip];
+            [image drawAtPoint:CGPointZero];
+            UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            self.iconView.image = newImage;
+        }
+        
     }];
     
 }

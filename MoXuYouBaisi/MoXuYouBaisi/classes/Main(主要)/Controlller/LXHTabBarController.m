@@ -64,7 +64,8 @@
     [self addChildViewController:friendTrendsNav];
     
     //我
-    LXHMineViewController *mineVc = [[LXHMineViewController alloc] init];
+    UIStoryboard *sd = [UIStoryboard storyboardWithName:@"LXHMineViewController" bundle:nil];
+    LXHMineViewController *mineVc = [sd instantiateInitialViewController];
     LXHNavigationController *mineNav = [[LXHNavigationController alloc] initWithRootViewController:mineVc];
     [self addChildViewController:mineNav];
     

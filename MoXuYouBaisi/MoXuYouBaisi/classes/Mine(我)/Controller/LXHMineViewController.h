@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXHMineViewController : UIViewController
+@interface LXHMineViewController : UITableViewController
 
 @end

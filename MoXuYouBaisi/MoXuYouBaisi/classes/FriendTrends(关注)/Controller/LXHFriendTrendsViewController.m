@@ -8,6 +8,7 @@
 
 #import "LXHFriendTrendsViewController.h"
 #import "UIBarButtonItem+BarButtonItem.h"
+#import "LXHLoginViewController.h"
 
 @interface LXHFriendTrendsViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor colorWithRed:215 / 255.0 green:215 / 255.0 blue:215 / 255.0 alpha:1];
     
     UIBarButtonItem *leftItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] targer:self action:@selector(friendsRecomment)];
     self.navigationItem.leftBarButtonItem = leftItem;
@@ -31,4 +32,10 @@
     NSLog(@"%s",__func__);
 }
 
+- (IBAction)loginClick {
+    LXHLoginViewController *vc = [[LXHLoginViewController alloc] init];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
 @end
