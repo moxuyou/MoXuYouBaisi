@@ -36,25 +36,25 @@
 
 @implementation LXHEssenceViewController
 
-//- (UIWindow *)windowToTop
-//{
-//    
-//    if (_windowToTop == nil) {
-//        
-//        //设置返回顶部按钮
-//        UIWindow *windowToTop = [[UIWindow alloc] initWithFrame:CGRectMake(self.view.LXHWidth - 40, self.view.LXHHeight - 100, 30, 30)];
-//        windowToTop.backgroundColor = [UIColor clearColor];
-//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollToTop)];
-//        [windowToTop addGestureRecognizer:tap];
-//        self.windowToTop = windowToTop;
-//        UIImageView *imageV = [[UIImageView alloc] initWithFrame:windowToTop.bounds];
-//        imageV.image = [UIImage imageNamed:@"mainCellDingClick"];
-//        imageV.userInteractionEnabled = YES;
-//        [windowToTop addSubview:imageV];
-//        [windowToTop makeKeyAndVisible];
-//    }
-//    return _windowToTop;
-//}
+- (UIWindow *)windowToTop
+{
+    
+    if (_windowToTop == nil) {
+        
+        //设置返回顶部按钮
+        UIWindow *windowToTop = [[UIWindow alloc] initWithFrame:CGRectMake(self.view.LXHWidth - 40, self.view.LXHHeight - 100, 30, 30)];
+        windowToTop.backgroundColor = [UIColor clearColor];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollToTop)];
+        [windowToTop addGestureRecognizer:tap];
+        self.windowToTop = windowToTop;
+        UIImageView *imageV = [[UIImageView alloc] initWithFrame:windowToTop.bounds];
+        imageV.image = [UIImage imageNamed:@"mainCellDingClick"];
+        imageV.userInteractionEnabled = YES;
+        [windowToTop addSubview:imageV];
+        [windowToTop makeKeyAndVisible];
+    }
+    return _windowToTop;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

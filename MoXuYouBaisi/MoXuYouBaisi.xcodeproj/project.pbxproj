@@ -14,7 +14,6 @@
 		0329F9E01D15703B0001B637 /* LXHSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9DE1D15703B0001B637 /* LXHSettingViewController.xib */; };
 		0329F9E21D1571A50001B637 /* LXHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9E11D1571A50001B637 /* LXHPublishViewController.xib */; };
 		0343CC2D1D1EA254004DA1D6 /* LXHExternValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */; };
-		0343CC301D1EC107004DA1D6 /* rrrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */; };
 		0343CC331D1EEDAC004DA1D6 /* LXHEssenceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */; };
 		0343CC361D1EEEBE004DA1D6 /* LXHEssenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC351D1EEEBE004DA1D6 /* LXHEssenceCell.m */; };
 		03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E291D196D00003DEAA9 /* LXHADViewController.m */; };
@@ -77,8 +76,6 @@
 		0329F9E31D159CAC0001B637 /* 01-BuDeJie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "01-BuDeJie.pch"; sourceTree = "<group>"; };
 		0343CC2B1D1EA254004DA1D6 /* LXHExternValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHExternValue.h; sourceTree = "<group>"; };
 		0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHExternValue.m; sourceTree = "<group>"; };
-		0343CC2E1D1EC107004DA1D6 /* rrrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rrrViewController.h; sourceTree = "<group>"; };
-		0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rrrViewController.m; sourceTree = "<group>"; };
 		0343CC311D1EEDAC004DA1D6 /* LXHEssenceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceItem.h; sourceTree = "<group>"; };
 		0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHEssenceItem.m; sourceTree = "<group>"; };
 		0343CC341D1EEEBE004DA1D6 /* LXHEssenceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceCell.h; sourceTree = "<group>"; };
@@ -415,8 +412,6 @@
 				03487E5A1D1B7100003DEAA9 /* LXHMineFootCellController.xib */,
 				03487E651D1BF633003DEAA9 /* LXHMineWebKit.h */,
 				03487E661D1BF633003DEAA9 /* LXHMineWebKit.m */,
-				0343CC2E1D1EC107004DA1D6 /* rrrViewController.h */,
-				0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -763,7 +758,6 @@
 				03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */,
 				03487E431D1AB4ED003DEAA9 /* LXHLoginBtn.m in Sources */,
 				03487E521D1B67F9003DEAA9 /* UIView+LXHView.m in Sources */,
-				0343CC301D1EC107004DA1D6 /* rrrViewController.m in Sources */,
 				03487E3F1D1AABFA003DEAA9 /* LXHLoginViewController.m in Sources */,
 				035367161D14160300C70F92 /* LXHNewViewController.m in Sources */,
 				035367131D1415FA00C70F92 /* LXHMineViewController.m in Sources */,

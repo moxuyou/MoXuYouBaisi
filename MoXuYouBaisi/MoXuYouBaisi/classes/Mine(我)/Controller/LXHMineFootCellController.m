@@ -14,7 +14,6 @@
 #import <SVProgressHUD.h>
 #import "LXHMineWebKit.h"
 #import <SafariServices/SafariServices.h>
-#import "rrrViewController.h"
 
 static int const cols = 4;
 static CGFloat const margin = 0.5;
@@ -154,31 +153,11 @@ static NSString *ID = @"mineFootCell";
     LXHMineFootCellItem *item = self.dataArray[indexPath.row];
     NSLog(@"点击了%lu", indexPath.row);
     
-    
-    rrrViewController *vc = [[rrrViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        UITableViewController *t = (UITableViewController *)self.superVC;
-        
-        NSLog(@"%@",NSStringFromUIEdgeInsets(t.tableView.contentInset));
-    });
-    
-    return;
-    //
-//    SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:item.url]];
-//    [self presentViewController:safariVc animated:YES completion:nil];
-//    UIViewController *vc = [UIViewController alloc]
-//    
-//    self presentViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#> completion:<#^(void)completion#>
-    
     if ([item.url containsString:@"http://"]) {
         //UIApplication
 //        NSURL *url = [NSURL URLWithString:item.url];
 //        [[UIApplication sharedApplication] openURL:url];
         
-        //UIApplication
 //        LXHMineWebKit *webView = [[LXHMineWebKit alloc] init];
 //        ;
 //        NSURL *url = [NSURL URLWithString:item.url];
