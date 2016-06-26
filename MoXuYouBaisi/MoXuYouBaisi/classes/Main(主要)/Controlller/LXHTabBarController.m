@@ -38,7 +38,6 @@
     LXHTabBar *tabBar = [[LXHTabBar alloc] init];
     [self setValue:tabBar forKey:@"tabBar"];
     
-    
 }
 
 #pragma mark - 设置子控制器

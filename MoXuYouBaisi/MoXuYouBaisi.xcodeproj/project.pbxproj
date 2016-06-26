@@ -13,6 +13,10 @@
 		0329F9DF1D15703B0001B637 /* LXHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329F9DD1D15703B0001B637 /* LXHSettingViewController.m */; };
 		0329F9E01D15703B0001B637 /* LXHSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9DE1D15703B0001B637 /* LXHSettingViewController.xib */; };
 		0329F9E21D1571A50001B637 /* LXHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9E11D1571A50001B637 /* LXHPublishViewController.xib */; };
+		0343CC2D1D1EA254004DA1D6 /* LXHExternValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */; };
+		0343CC301D1EC107004DA1D6 /* rrrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */; };
+		0343CC331D1EEDAC004DA1D6 /* LXHEssenceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */; };
+		0343CC361D1EEEBE004DA1D6 /* LXHEssenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC351D1EEEBE004DA1D6 /* LXHEssenceCell.m */; };
 		03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E291D196D00003DEAA9 /* LXHADViewController.m */; };
 		03487E2C1D196D00003DEAA9 /* LXHADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03487E2A1D196D00003DEAA9 /* LXHADViewController.xib */; };
 		03487E301D19AB51003DEAA9 /* LXHSugesTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E2E1D19AB51003DEAA9 /* LXHSugesTagViewController.m */; };
@@ -37,6 +41,8 @@
 		03487E641D1B769C003DEAA9 /* LXHMineFootCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03487E631D1B769C003DEAA9 /* LXHMineFootCellView.xib */; };
 		03487E671D1BF633003DEAA9 /* LXHMineWebKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E661D1BF633003DEAA9 /* LXHMineWebKit.m */; };
 		03487E691D1C16BD003DEAA9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03487E681D1C16BD003DEAA9 /* SafariServices.framework */; };
+		034AA1541D2053B9001FF475 /* LXHloadMoreDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034AA1531D2053B9001FF475 /* LXHloadMoreDataView.m */; };
+		034AA1561D2053C3001FF475 /* LXHloadMoreDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034AA1551D2053C3001FF475 /* LXHloadMoreDataView.xib */; };
 		035366E01D140EA000C70F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035366DF1D140EA000C70F92 /* main.m */; };
 		035366E31D140EA000C70F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035366E21D140EA000C70F92 /* AppDelegate.m */; };
 		035366EB1D140EA000C70F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035366EA1D140EA000C70F92 /* Assets.xcassets */; };
@@ -48,6 +54,12 @@
 		035367191D14161400C70F92 /* LXHPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367181D14161400C70F92 /* LXHPublishViewController.m */; };
 		035367201D14166A00C70F92 /* LXHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353671F1D14166A00C70F92 /* LXHTabBarController.m */; };
 		035367241D141E5D00C70F92 /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367231D141E5D00C70F92 /* UIImage+Original.m */; };
+		03B90E621D1D6C7200FBC075 /* LXHAllDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E611D1D6C7200FBC075 /* LXHAllDataViewController.m */; };
+		03B90E651D1D6C9B00FBC075 /* LXHVedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E641D1D6C9B00FBC075 /* LXHVedioViewController.m */; };
+		03B90E681D1D6CA700FBC075 /* LXHVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E671D1D6CA700FBC075 /* LXHVoiceViewController.m */; };
+		03B90E6B1D1D6CBA00FBC075 /* LXHPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E6A1D1D6CBA00FBC075 /* LXHPictureViewController.m */; };
+		03B90E6E1D1D6CC800FBC075 /* LXHWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E6D1D1D6CC800FBC075 /* LXHWorldViewController.m */; };
+		03B90E711D1D7EE400FBC075 /* LXHHeardViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E701D1D7EE400FBC075 /* LXHHeardViewButton.m */; };
 		E9BA9EBFFD81B55CF584C372 /* libPods-MoXuYouBaisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF828CB9C9D9825178C2355 /* libPods-MoXuYouBaisi.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +75,14 @@
 		0329F9DE1D15703B0001B637 /* LXHSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHSettingViewController.xib; sourceTree = "<group>"; };
 		0329F9E11D1571A50001B637 /* LXHPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LXHPublishViewController.xib; path = "MoXuYouBaisi/classes/Publish(发布)/Controller/LXHPublishViewController.xib"; sourceTree = SOURCE_ROOT; };
 		0329F9E31D159CAC0001B637 /* 01-BuDeJie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "01-BuDeJie.pch"; sourceTree = "<group>"; };
+		0343CC2B1D1EA254004DA1D6 /* LXHExternValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHExternValue.h; sourceTree = "<group>"; };
+		0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHExternValue.m; sourceTree = "<group>"; };
+		0343CC2E1D1EC107004DA1D6 /* rrrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rrrViewController.h; sourceTree = "<group>"; };
+		0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rrrViewController.m; sourceTree = "<group>"; };
+		0343CC311D1EEDAC004DA1D6 /* LXHEssenceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceItem.h; sourceTree = "<group>"; };
+		0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHEssenceItem.m; sourceTree = "<group>"; };
+		0343CC341D1EEEBE004DA1D6 /* LXHEssenceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceCell.h; sourceTree = "<group>"; };
+		0343CC351D1EEEBE004DA1D6 /* LXHEssenceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHEssenceCell.m; sourceTree = "<group>"; };
 		03487E281D196D00003DEAA9 /* LXHADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHADViewController.h; sourceTree = "<group>"; };
 		03487E291D196D00003DEAA9 /* LXHADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHADViewController.m; sourceTree = "<group>"; };
 		03487E2A1D196D00003DEAA9 /* LXHADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHADViewController.xib; sourceTree = "<group>"; };
@@ -101,6 +121,9 @@
 		03487E651D1BF633003DEAA9 /* LXHMineWebKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHMineWebKit.h; sourceTree = "<group>"; };
 		03487E661D1BF633003DEAA9 /* LXHMineWebKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHMineWebKit.m; sourceTree = "<group>"; };
 		03487E681D1C16BD003DEAA9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		034AA1521D2053B9001FF475 /* LXHloadMoreDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHloadMoreDataView.h; sourceTree = "<group>"; };
+		034AA1531D2053B9001FF475 /* LXHloadMoreDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHloadMoreDataView.m; sourceTree = "<group>"; };
+		034AA1551D2053C3001FF475 /* LXHloadMoreDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHloadMoreDataView.xib; sourceTree = "<group>"; };
 		035366DB1D140EA000C70F92 /* MoXuYouBaisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoXuYouBaisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035366DF1D140EA000C70F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		035366E11D140EA000C70F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +145,18 @@
 		0353671F1D14166A00C70F92 /* LXHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHTabBarController.m; sourceTree = "<group>"; };
 		035367221D141E5D00C70F92 /* UIImage+Original.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Original.h"; sourceTree = "<group>"; };
 		035367231D141E5D00C70F92 /* UIImage+Original.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Original.m"; sourceTree = "<group>"; };
+		03B90E601D1D6C7200FBC075 /* LXHAllDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHAllDataViewController.h; sourceTree = "<group>"; };
+		03B90E611D1D6C7200FBC075 /* LXHAllDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHAllDataViewController.m; sourceTree = "<group>"; };
+		03B90E631D1D6C9B00FBC075 /* LXHVedioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHVedioViewController.h; sourceTree = "<group>"; };
+		03B90E641D1D6C9B00FBC075 /* LXHVedioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHVedioViewController.m; sourceTree = "<group>"; };
+		03B90E661D1D6CA700FBC075 /* LXHVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHVoiceViewController.h; sourceTree = "<group>"; };
+		03B90E671D1D6CA700FBC075 /* LXHVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHVoiceViewController.m; sourceTree = "<group>"; };
+		03B90E691D1D6CBA00FBC075 /* LXHPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHPictureViewController.h; sourceTree = "<group>"; };
+		03B90E6A1D1D6CBA00FBC075 /* LXHPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHPictureViewController.m; sourceTree = "<group>"; };
+		03B90E6C1D1D6CC800FBC075 /* LXHWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHWorldViewController.h; sourceTree = "<group>"; };
+		03B90E6D1D1D6CC800FBC075 /* LXHWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHWorldViewController.m; sourceTree = "<group>"; };
+		03B90E6F1D1D7EE400FBC075 /* LXHHeardViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHHeardViewButton.h; sourceTree = "<group>"; };
+		03B90E701D1D7EE400FBC075 /* LXHHeardViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHHeardViewButton.m; sourceTree = "<group>"; };
 		8ECA86FF8DE3CD8488FA38AE /* Pods-MoXuYouBaisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoXuYouBaisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoXuYouBaisi/Pods-MoXuYouBaisi.debug.xcconfig"; sourceTree = "<group>"; };
 		96732C6ADF9EB61D26EDD7F3 /* Pods-MoXuYouBaisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoXuYouBaisi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoXuYouBaisi/Pods-MoXuYouBaisi.release.xcconfig"; sourceTree = "<group>"; };
 		FBF828CB9C9D9825178C2355 /* libPods-MoXuYouBaisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoXuYouBaisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,6 +313,16 @@
 			children = (
 				0353670B1D1415D100C70F92 /* LXHEssenceViewController.h */,
 				0353670C1D1415D100C70F92 /* LXHEssenceViewController.m */,
+				03B90E601D1D6C7200FBC075 /* LXHAllDataViewController.h */,
+				03B90E611D1D6C7200FBC075 /* LXHAllDataViewController.m */,
+				03B90E631D1D6C9B00FBC075 /* LXHVedioViewController.h */,
+				03B90E641D1D6C9B00FBC075 /* LXHVedioViewController.m */,
+				03B90E661D1D6CA700FBC075 /* LXHVoiceViewController.h */,
+				03B90E671D1D6CA700FBC075 /* LXHVoiceViewController.m */,
+				03B90E691D1D6CBA00FBC075 /* LXHPictureViewController.h */,
+				03B90E6A1D1D6CBA00FBC075 /* LXHPictureViewController.m */,
+				03B90E6C1D1D6CC800FBC075 /* LXHWorldViewController.h */,
+				03B90E6D1D1D6CC800FBC075 /* LXHWorldViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +330,8 @@
 		035366F81D14101A00C70F92 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0343CC311D1EEDAC004DA1D6 /* LXHEssenceItem.h */,
+				0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +339,13 @@
 		035366F91D14101A00C70F92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03B90E6F1D1D7EE400FBC075 /* LXHHeardViewButton.h */,
+				03B90E701D1D7EE400FBC075 /* LXHHeardViewButton.m */,
+				0343CC341D1EEEBE004DA1D6 /* LXHEssenceCell.h */,
+				0343CC351D1EEEBE004DA1D6 /* LXHEssenceCell.m */,
+				034AA1521D2053B9001FF475 /* LXHloadMoreDataView.h */,
+				034AA1531D2053B9001FF475 /* LXHloadMoreDataView.m */,
+				034AA1551D2053C3001FF475 /* LXHloadMoreDataView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +415,8 @@
 				03487E5A1D1B7100003DEAA9 /* LXHMineFootCellController.xib */,
 				03487E651D1BF633003DEAA9 /* LXHMineWebKit.h */,
 				03487E661D1BF633003DEAA9 /* LXHMineWebKit.m */,
+				0343CC2E1D1EC107004DA1D6 /* rrrViewController.h */,
+				0343CC2F1D1EC107004DA1D6 /* rrrViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -517,6 +573,8 @@
 				03487E511D1B67F9003DEAA9 /* UIView+LXHView.m */,
 				03487E531D1B6F4D003DEAA9 /* LXHTools.h */,
 				03487E541D1B6F4D003DEAA9 /* LXHTools.m */,
+				0343CC2B1D1EA254004DA1D6 /* LXHExternValue.h */,
+				0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */,
 			);
 			name = Category;
 			path = "../Main(主要)/Category";
@@ -611,6 +669,7 @@
 				03487E4F1D1B1870003DEAA9 /* LXHMineViewController.storyboard in Resources */,
 				03487E2C1D196D00003DEAA9 /* LXHADViewController.xib in Resources */,
 				03487E311D19AB51003DEAA9 /* LXHSugesTagViewController.xib in Resources */,
+				034AA1561D2053C3001FF475 /* LXHloadMoreDataView.xib in Resources */,
 				0329F9E21D1571A50001B637 /* LXHPublishViewController.xib in Resources */,
 				03487E3B1D1AA9A3003DEAA9 /* LXHFriendTrendsViewController.xib in Resources */,
 				03487E641D1B769C003DEAA9 /* LXHMineFootCellView.xib in Resources */,
@@ -672,21 +731,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0343CC331D1EEDAC004DA1D6 /* LXHEssenceItem.m in Sources */,
 				035367241D141E5D00C70F92 /* UIImage+Original.m in Sources */,
 				03487E5F1D1B766F003DEAA9 /* LXHMineFootCellItem.m in Sources */,
+				03B90E651D1D6C9B00FBC075 /* LXHVedioViewController.m in Sources */,
+				034AA1541D2053B9001FF475 /* LXHloadMoreDataView.m in Sources */,
 				035366E31D140EA000C70F92 /* AppDelegate.m in Sources */,
 				03487E4B1D1B1408003DEAA9 /* LXHLoginTextField.m in Sources */,
 				0329F9CF1D151C7B0001B637 /* LXHTabBar.m in Sources */,
+				03B90E6E1D1D6CC800FBC075 /* LXHWorldViewController.m in Sources */,
 				03487E301D19AB51003DEAA9 /* LXHSugesTagViewController.m in Sources */,
 				03487E621D1B768E003DEAA9 /* LXHMineFootCellView.m in Sources */,
 				0329F9D51D1564630001B637 /* UIBarButtonItem+BarButtonItem.m in Sources */,
+				0343CC2D1D1EA254004DA1D6 /* LXHExternValue.m in Sources */,
 				03487E461D1AD493003DEAA9 /* LXHLoginView.m in Sources */,
 				03487E5B1D1B7100003DEAA9 /* LXHMineFootCellController.m in Sources */,
 				035367101D1415F000C70F92 /* LXHFriendTrendsViewController.m in Sources */,
 				03487E671D1BF633003DEAA9 /* LXHMineWebKit.m in Sources */,
 				0353670D1D1415D100C70F92 /* LXHEssenceViewController.m in Sources */,
+				0343CC361D1EEEBE004DA1D6 /* LXHEssenceCell.m in Sources */,
 				035366E01D140EA000C70F92 /* main.m in Sources */,
 				035367201D14166A00C70F92 /* LXHTabBarController.m in Sources */,
+				03B90E6B1D1D6CBA00FBC075 /* LXHPictureViewController.m in Sources */,
+				03B90E681D1D6CA700FBC075 /* LXHVoiceViewController.m in Sources */,
+				03B90E711D1D7EE400FBC075 /* LXHHeardViewButton.m in Sources */,
+				03B90E621D1D6C7200FBC075 /* LXHAllDataViewController.m in Sources */,
 				0329F9D21D1559280001B637 /* LXHNavigationController.m in Sources */,
 				03487E551D1B6F4D003DEAA9 /* LXHTools.m in Sources */,
 				03487E341D19ABBD003DEAA9 /* LXHSugesTagItem.m in Sources */,
@@ -694,6 +763,7 @@
 				03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */,
 				03487E431D1AB4ED003DEAA9 /* LXHLoginBtn.m in Sources */,
 				03487E521D1B67F9003DEAA9 /* UIView+LXHView.m in Sources */,
+				0343CC301D1EC107004DA1D6 /* rrrViewController.m in Sources */,
 				03487E3F1D1AABFA003DEAA9 /* LXHLoginViewController.m in Sources */,
 				035367161D14160300C70F92 /* LXHNewViewController.m in Sources */,
 				035367131D1415FA00C70F92 /* LXHMineViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "UIBarButtonItem+BarButtonItem.h"
 #import "LXHSettingViewController.h"
 #import "LXHMineFootCellController.h"
+#import "rrrViewController.h"
 
 @interface LXHMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -43,14 +44,34 @@
         
     LXHMineFootCellController *vc = [[LXHMineFootCellController alloc] init];
     self.footVc = vc;
-    self.tableView.tableFooterView = vc.view;
+    vc.superVC = self;
+    vc.view.frame = self.view.bounds;
+    [self.view addSubview:vc.view];
+    
+//    self.tableView.tableFooterView = vc.view;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));
+    
+    
 }
 
 - (void)setting
 {
 //    NSLog(@"%s",__func__);
-    LXHSettingViewController *vc = [[LXHSettingViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    LXHSettingViewController *vc = [[LXHSettingViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    rrrViewController *vc = [[rrrViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        NSLog(@"%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));
+    });
 }
 
 - (void)sun:(UIButton *)btn

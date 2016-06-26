@@ -10,6 +10,6 @@
 
 @interface LXHMineFootCellController : UIViewController
 
-
+@property (nonatomic, strong) UIViewController *superVC;
 
 @end

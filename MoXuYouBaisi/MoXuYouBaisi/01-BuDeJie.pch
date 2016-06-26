@@ -11,6 +11,10 @@
 
 #import "LXHTools.h"
 
+#import "LXHExternValue.h"
+
+#define LXHRandomColor [UIColor colorWithHue:arc4random_uniform(255) / 255.0 saturation:arc4random_uniform(255) / 255.0 brightness:arc4random_uniform(255) / 255.0 alpha:1]
+
 #define BSScreenH [UIScreen mainScreen].bounds.size.height
 
 #define BSScreenW [UIScreen mainScreen].bounds.size.width
