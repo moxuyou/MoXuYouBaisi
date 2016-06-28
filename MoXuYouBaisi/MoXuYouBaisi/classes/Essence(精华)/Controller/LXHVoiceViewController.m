@@ -20,10 +20,15 @@
 @property (nonatomic , strong)NSMutableArray *itemArray;
 /**  */
 @property (nonatomic , strong)NSString *maxtime;
-/** 判断是否正在加载数据 */
-@property (nonatomic , assign)BOOL isLoadingData;
-/** 加载更多数据的label */
-@property (nonatomic , weak)LXHloadMoreDataView *loadMoreDataBtn;
+/** 判断是否正在加载更多数据 */
+@property (nonatomic , assign)BOOL isLoadingMoreData;
+/** 判断是否正在加载最新数据 */
+@property (nonatomic , assign)BOOL isLoadingNewData;
+/** 下面加载更多数据的label */
+@property (nonatomic , weak)LXHloadMoreDataView *footLoadMoreDataBtn;
+/** 上面加载更多数据的label */
+@property (nonatomic , weak)LXHloadMoreDataView *headLoadMoreDataBtn;
+
 /** 加载更多数据的小菊花 */
 @property (nonatomic , weak)UIActivityIndicatorView *indicatorView;
 
@@ -38,7 +43,7 @@
     [self setTableView];
     
     //加载数据
-    [self loadData];
+    [self loadNewData];
     
 }
 
@@ -89,12 +94,13 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"a"] = @"list";
     dict[@"c"] = @"data";
+    dict[@"type"] = @"31";
     dict[@"maxtime"] = self.maxtime;
     
     //设置底部按钮的状态
-    self.loadMoreDataBtn.animationView.hidden = NO;
-    self.loadMoreDataBtn.textLabel.text = @"正在加载数据。。。";
-    [self.loadMoreDataBtn.animationView startAnimating];
+    self.footLoadMoreDataBtn.animationView.hidden = NO;
+    self.footLoadMoreDataBtn.textLabel.text = @"正在加载数据。。。";
+    [self.footLoadMoreDataBtn.animationView startAnimating];
     
     [manager GET:LXHBaiSiUrl parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         
@@ -111,33 +117,25 @@
         [self.tableView reloadData];
         
         //恢复底部按钮的状态
-        self.loadMoreDataBtn.animationView.hidden = YES;
-        self.loadMoreDataBtn.textLabel.text = @"点击或者下拉加载更多数据";
-        [self.loadMoreDataBtn.animationView stopAnimating];
-        //还原数据请求状态
-        self.isLoadingData = NO;
+        [self footEndLoadMoreData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"%@", error);
         //恢复底部按钮的状态
-        self.loadMoreDataBtn.animationView.hidden = YES;
-        self.loadMoreDataBtn.textLabel.text = @"点击或者下拉加载更多数据";
-        [self.loadMoreDataBtn.animationView stopAnimating];
-        //还原数据请求状态
-        self.isLoadingData = NO;
+        [self footEndLoadMoreData];
     }];
     
     
 }
 
 //第一次请求数据
-- (void)loadData
+- (void)loadNewData
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"a"] = @"list";
     dict[@"c"] = @"data";
-    
+    dict[@"type"] = @"31";
     
     [manager GET:LXHBaiSiUrl parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         
@@ -152,11 +150,11 @@
         [self loadMoreDataView];
         //重新加载tableVie的数据
         [self.tableView reloadData];
-        self.isLoadingData = NO;
+        [self headEndLoadNewData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"%@", error);
-        self.isLoadingData = NO;
+        [self headEndLoadNewData];
     }];
     
 }
@@ -164,36 +162,116 @@
 //创建加载数据的按钮
 - (void)loadMoreDataView
 {
+    //添加下面的加载按钮
     LXHloadMoreDataView *footView = [LXHloadMoreDataView loadMoreDataView];
     self.tableView.tableFooterView = footView;
     footView.LXHWidth = [UIScreen mainScreen].bounds.size.width;
     //一开始不显示小菊花
     footView.animationView.hidden = YES;
     footView.backgroundColor = [UIColor grayColor];
-    footView.textLabel.text = @"点击或者下拉加载更多数据";
+    footView.textLabel.text = @"点击或者上拉加载更多数据";
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadMoreData)];
     //添加点击手势
     [footView addGestureRecognizer:tap];
-    self.loadMoreDataBtn = footView;
+    self.footLoadMoreDataBtn = footView;
+    
+    //添加上面的加载按钮
+    
+    LXHloadMoreDataView *headView = [LXHloadMoreDataView loadMoreDataView];
+    headView.frame = CGRectMake(0, -44, [UIScreen mainScreen].bounds.size.width, 44);
+    headView.textLabel.text = @"下拉加载更多数据";
+    //一开始不显示小菊花
+    headView.animationView.hidden = YES;
+    [self.tableView addSubview:headView];
+    headView.backgroundColor = [UIColor grayColor];
+
+    self.headLoadMoreDataBtn = headView;
+    
+    //添加广告信息
+    UILabel *headLabel = [[UILabel alloc] init];
+    headLabel.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 35);
+    headLabel.textAlignment = NSTextAlignmentCenter;
+    headLabel.text = @"广告广告广告广告广告广告";
+    headLabel.backgroundColor = [UIColor blueColor];
+    self.tableView.tableHeaderView = headLabel;
 }
 
 #pragma mark - tableViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+//    [self headBeginLoadNewData];
+    
+    [self footBeginLoadMoreData];
+    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self headBeginLoadNewData];
+}
+
+- (void)headBeginLoadNewData
+{
+    //判断是否正在更新数据
+    if (self.isLoadingNewData) return;
+    
+    //判断是否满足拖拽条件
+    if (self.tableView.contentOffset.y < (-self.tableView.contentInset.top - self.headLoadMoreDataBtn.LXHHeight)) {
+        self.isLoadingNewData = YES;
+        
+        //加载新数据
+        [self loadNewData];
+        
+        self.headLoadMoreDataBtn.textLabel.text = @"正在加载更多数据";
+        self.headLoadMoreDataBtn.animationView.hidden = NO;
+        [UIView animateWithDuration:0.5 animations:^{
+            UIEdgeInsets inset = self.tableView.contentInset;
+            inset.top += self.headLoadMoreDataBtn.LXHHeight;
+            self.tableView.contentInset = inset;
+        }];
+        
+        NSLog(@"下拉刷新");
+    }
+}
+
+- (void)headEndLoadNewData
+{
+    //还原请求数据状态
+    self.isLoadingNewData = NO;
+    
+    //还原请求头View的状态
+    self.headLoadMoreDataBtn.textLabel.text = @"下拉加载更多数据";
+    self.headLoadMoreDataBtn.animationView.hidden = YES;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.tableView.contentInset = UIEdgeInsetsMake(LXHHeadViewHeigth + LXHNavigationBarHeigth, 0, 0, 0);
+    }];
+}
+
+- (void)footBeginLoadMoreData
+{
     //判断tableView是否有数据
     if (self.itemArray.count <= 0) return;
     CGFloat offset = self.tableView.contentSize.height + LXHTabBarHeigth - ([UIScreen mainScreen].bounds.size.height + self.tableView.contentOffset.y);
     //判断是否已经拖拉到末尾
     if (offset >= 0) return;
+    
     //判断是否正在加载数据
-    if (self.isLoadingData) return;
-    
-//    NSLog(@"%s--offset%lf",__func__, offset);
+    if (self.isLoadingMoreData) return;
     //设置状态为正在加载数据
-    self.isLoadingData = YES;
+    self.isLoadingMoreData = YES;
+    //    NSLog(@"%s--offset%lf",__func__, offset);
     [self loadMoreData];
-    
+}
+
+- (void)footEndLoadMoreData
+{
+    //恢复底部按钮的状态
+    self.footLoadMoreDataBtn.animationView.hidden = YES;
+    self.footLoadMoreDataBtn.textLabel.text = @"点击或者下拉加载更多数据";
+    [self.footLoadMoreDataBtn.animationView stopAnimating];
+    //还原数据请求状态
+    self.isLoadingMoreData = NO;
 }
 
 @end

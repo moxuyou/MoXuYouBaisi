@@ -58,6 +58,7 @@
 
 - (void)add
 {
+    //发送通知，让中间的按钮弹出界面
     [[NSNotificationCenter defaultCenter] postNotificationName:@"addPublish" object:self];
 }
 
