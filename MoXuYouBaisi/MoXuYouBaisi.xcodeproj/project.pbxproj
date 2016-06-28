@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		0329F9CF1D151C7B0001B637 /* LXHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329F9CE1D151C7B0001B637 /* LXHTabBar.m */; };
 		0329F9D21D1559280001B637 /* LXHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329F9D11D1559280001B637 /* LXHNavigationController.m */; };
-		0329F9D51D1564630001B637 /* UIBarButtonItem+BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329F9D41D1564630001B637 /* UIBarButtonItem+BarButtonItem.m */; };
 		0329F9DF1D15703B0001B637 /* LXHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329F9DD1D15703B0001B637 /* LXHSettingViewController.m */; };
 		0329F9E01D15703B0001B637 /* LXHSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9DE1D15703B0001B637 /* LXHSettingViewController.xib */; };
 		0329F9E21D1571A50001B637 /* LXHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329F9E11D1571A50001B637 /* LXHPublishViewController.xib */; };
-		0343CC2D1D1EA254004DA1D6 /* LXHExternValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */; };
 		0343CC331D1EEDAC004DA1D6 /* LXHEssenceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */; };
 		0343CC361D1EEEBE004DA1D6 /* LXHEssenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343CC351D1EEEBE004DA1D6 /* LXHEssenceCell.m */; };
 		03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E291D196D00003DEAA9 /* LXHADViewController.m */; };
@@ -31,8 +29,6 @@
 		03487E481D1AD4A9003DEAA9 /* LXHLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03487E471D1AD4A9003DEAA9 /* LXHLoginView.xib */; };
 		03487E4B1D1B1408003DEAA9 /* LXHLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E4A1D1B1408003DEAA9 /* LXHLoginTextField.m */; };
 		03487E4F1D1B1870003DEAA9 /* LXHMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03487E4E1D1B1870003DEAA9 /* LXHMineViewController.storyboard */; };
-		03487E521D1B67F9003DEAA9 /* UIView+LXHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E511D1B67F9003DEAA9 /* UIView+LXHView.m */; };
-		03487E551D1B6F4D003DEAA9 /* LXHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E541D1B6F4D003DEAA9 /* LXHTools.m */; };
 		03487E5B1D1B7100003DEAA9 /* LXHMineFootCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E591D1B7100003DEAA9 /* LXHMineFootCellController.m */; };
 		03487E5C1D1B7100003DEAA9 /* LXHMineFootCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03487E5A1D1B7100003DEAA9 /* LXHMineFootCellController.xib */; };
 		03487E5F1D1B766F003DEAA9 /* LXHMineFootCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03487E5E1D1B766F003DEAA9 /* LXHMineFootCellItem.m */; };
@@ -44,15 +40,18 @@
 		034AA1561D2053C3001FF475 /* LXHloadMoreDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034AA1551D2053C3001FF475 /* LXHloadMoreDataView.xib */; };
 		035366E01D140EA000C70F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035366DF1D140EA000C70F92 /* main.m */; };
 		035366E31D140EA000C70F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035366E21D140EA000C70F92 /* AppDelegate.m */; };
-		035366EB1D140EA000C70F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035366EA1D140EA000C70F92 /* Assets.xcassets */; };
-		035366EE1D140EA000C70F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035366EC1D140EA000C70F92 /* LaunchScreen.storyboard */; };
 		0353670D1D1415D100C70F92 /* LXHEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353670C1D1415D100C70F92 /* LXHEssenceViewController.m */; };
 		035367101D1415F000C70F92 /* LXHFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353670F1D1415F000C70F92 /* LXHFriendTrendsViewController.m */; };
 		035367131D1415FA00C70F92 /* LXHMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367121D1415FA00C70F92 /* LXHMineViewController.m */; };
 		035367161D14160300C70F92 /* LXHNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367151D14160300C70F92 /* LXHNewViewController.m */; };
 		035367191D14161400C70F92 /* LXHPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367181D14161400C70F92 /* LXHPublishViewController.m */; };
 		035367201D14166A00C70F92 /* LXHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353671F1D14166A00C70F92 /* LXHTabBarController.m */; };
-		035367241D141E5D00C70F92 /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = 035367231D141E5D00C70F92 /* UIImage+Original.m */; };
+		035993C71D22ABA800A7E77C /* LXHExternValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 035993BE1D22ABA800A7E77C /* LXHExternValue.m */; };
+		035993C81D22ABA800A7E77C /* LXHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 035993C01D22ABA800A7E77C /* LXHTools.m */; };
+		035993C91D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 035993C21D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.m */; };
+		035993CA1D22ABA800A7E77C /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = 035993C41D22ABA800A7E77C /* UIImage+Original.m */; };
+		035993CB1D22ABA800A7E77C /* UIView+LXHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035993C61D22ABA800A7E77C /* UIView+LXHView.m */; };
+		035993CD1D22ABC500A7E77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035993CC1D22ABC500A7E77C /* Assets.xcassets */; };
 		03B90E621D1D6C7200FBC075 /* LXHAllDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E611D1D6C7200FBC075 /* LXHAllDataViewController.m */; };
 		03B90E651D1D6C9B00FBC075 /* LXHVedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E641D1D6C9B00FBC075 /* LXHVedioViewController.m */; };
 		03B90E681D1D6CA700FBC075 /* LXHVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B90E671D1D6CA700FBC075 /* LXHVoiceViewController.m */; };
@@ -67,15 +66,11 @@
 		0329F9CE1D151C7B0001B637 /* LXHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHTabBar.m; sourceTree = "<group>"; };
 		0329F9D01D1559280001B637 /* LXHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHNavigationController.h; sourceTree = "<group>"; };
 		0329F9D11D1559280001B637 /* LXHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHNavigationController.m; sourceTree = "<group>"; };
-		0329F9D31D1564630001B637 /* UIBarButtonItem+BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItem.h"; sourceTree = "<group>"; };
-		0329F9D41D1564630001B637 /* UIBarButtonItem+BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonItem.m"; sourceTree = "<group>"; };
 		0329F9DC1D15703B0001B637 /* LXHSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHSettingViewController.h; sourceTree = "<group>"; };
 		0329F9DD1D15703B0001B637 /* LXHSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHSettingViewController.m; sourceTree = "<group>"; };
 		0329F9DE1D15703B0001B637 /* LXHSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHSettingViewController.xib; sourceTree = "<group>"; };
 		0329F9E11D1571A50001B637 /* LXHPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LXHPublishViewController.xib; path = "MoXuYouBaisi/classes/Publish(发布)/Controller/LXHPublishViewController.xib"; sourceTree = SOURCE_ROOT; };
 		0329F9E31D159CAC0001B637 /* 01-BuDeJie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "01-BuDeJie.pch"; sourceTree = "<group>"; };
-		0343CC2B1D1EA254004DA1D6 /* LXHExternValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHExternValue.h; sourceTree = "<group>"; };
-		0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHExternValue.m; sourceTree = "<group>"; };
 		0343CC311D1EEDAC004DA1D6 /* LXHEssenceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceItem.h; sourceTree = "<group>"; };
 		0343CC321D1EEDAC004DA1D6 /* LXHEssenceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHEssenceItem.m; sourceTree = "<group>"; };
 		0343CC341D1EEEBE004DA1D6 /* LXHEssenceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceCell.h; sourceTree = "<group>"; };
@@ -103,10 +98,6 @@
 		03487E491D1B1408003DEAA9 /* LXHLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHLoginTextField.h; sourceTree = "<group>"; };
 		03487E4A1D1B1408003DEAA9 /* LXHLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHLoginTextField.m; sourceTree = "<group>"; };
 		03487E4E1D1B1870003DEAA9 /* LXHMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LXHMineViewController.storyboard; sourceTree = "<group>"; };
-		03487E501D1B67F9003DEAA9 /* UIView+LXHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXHView.h"; sourceTree = "<group>"; };
-		03487E511D1B67F9003DEAA9 /* UIView+LXHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXHView.m"; sourceTree = "<group>"; };
-		03487E531D1B6F4D003DEAA9 /* LXHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHTools.h; sourceTree = "<group>"; };
-		03487E541D1B6F4D003DEAA9 /* LXHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHTools.m; sourceTree = "<group>"; };
 		03487E581D1B7100003DEAA9 /* LXHMineFootCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHMineFootCellController.h; sourceTree = "<group>"; };
 		03487E591D1B7100003DEAA9 /* LXHMineFootCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHMineFootCellController.m; sourceTree = "<group>"; };
 		03487E5A1D1B7100003DEAA9 /* LXHMineFootCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXHMineFootCellController.xib; sourceTree = "<group>"; };
@@ -125,8 +116,6 @@
 		035366DF1D140EA000C70F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		035366E11D140EA000C70F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		035366E21D140EA000C70F92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		035366EA1D140EA000C70F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
-		035366ED1D140EA000C70F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		035366EF1D140EA000C70F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0353670B1D1415D100C70F92 /* LXHEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHEssenceViewController.h; sourceTree = "<group>"; };
 		0353670C1D1415D100C70F92 /* LXHEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHEssenceViewController.m; sourceTree = "<group>"; };
@@ -140,8 +129,17 @@
 		035367181D14161400C70F92 /* LXHPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHPublishViewController.m; sourceTree = "<group>"; };
 		0353671E1D14166A00C70F92 /* LXHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHTabBarController.h; sourceTree = "<group>"; };
 		0353671F1D14166A00C70F92 /* LXHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHTabBarController.m; sourceTree = "<group>"; };
-		035367221D141E5D00C70F92 /* UIImage+Original.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Original.h"; sourceTree = "<group>"; };
-		035367231D141E5D00C70F92 /* UIImage+Original.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Original.m"; sourceTree = "<group>"; };
+		035993BD1D22ABA800A7E77C /* LXHExternValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHExternValue.h; sourceTree = "<group>"; };
+		035993BE1D22ABA800A7E77C /* LXHExternValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHExternValue.m; sourceTree = "<group>"; };
+		035993BF1D22ABA800A7E77C /* LXHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHTools.h; sourceTree = "<group>"; };
+		035993C01D22ABA800A7E77C /* LXHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHTools.m; sourceTree = "<group>"; };
+		035993C11D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItem.h"; sourceTree = "<group>"; };
+		035993C21D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonItem.m"; sourceTree = "<group>"; };
+		035993C31D22ABA800A7E77C /* UIImage+Original.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Original.h"; sourceTree = "<group>"; };
+		035993C41D22ABA800A7E77C /* UIImage+Original.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Original.m"; sourceTree = "<group>"; };
+		035993C51D22ABA800A7E77C /* UIView+LXHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXHView.h"; sourceTree = "<group>"; };
+		035993C61D22ABA800A7E77C /* UIView+LXHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXHView.m"; sourceTree = "<group>"; };
+		035993CC1D22ABC500A7E77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03B90E601D1D6C7200FBC075 /* LXHAllDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHAllDataViewController.h; sourceTree = "<group>"; };
 		03B90E611D1D6C7200FBC075 /* LXHAllDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHAllDataViewController.m; sourceTree = "<group>"; };
 		03B90E631D1D6C9B00FBC075 /* LXHVedioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHVedioViewController.h; sourceTree = "<group>"; };
@@ -265,6 +263,7 @@
 				035366E11D140EA000C70F92 /* AppDelegate.h */,
 				035366E21D140EA000C70F92 /* AppDelegate.m */,
 				035366EF1D140EA000C70F92 /* Info.plist */,
+				035993CC1D22ABC500A7E77C /* Assets.xcassets */,
 				0329F9E31D159CAC0001B637 /* 01-BuDeJie.pch */,
 				035366DE1D140EA000C70F92 /* Supporting Files */,
 			);
@@ -290,7 +289,7 @@
 				035366FE1D14101A00C70F92 /* Mine(我) */,
 				035367021D14101A00C70F92 /* New(新帖) */,
 				035367071D14101A00C70F92 /* Publish(发布) */,
-				035367061D14101A00C70F92 /* Other */,
+				035993BB1D22ABA800A7E77C /* Other(其他) */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -476,16 +475,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		035367061D14101A00C70F92 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				035367211D141A7400C70F92 /* Category */,
-				035366EA1D140EA000C70F92 /* Assets.xcassets */,
-				035366EC1D140EA000C70F92 /* LaunchScreen.storyboard */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
 		035367071D14101A00C70F92 /* Publish(发布) */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,22 +546,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		035367211D141A7400C70F92 /* Category */ = {
+		035993BB1D22ABA800A7E77C /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
-				035367221D141E5D00C70F92 /* UIImage+Original.h */,
-				035367231D141E5D00C70F92 /* UIImage+Original.m */,
-				0329F9D31D1564630001B637 /* UIBarButtonItem+BarButtonItem.h */,
-				0329F9D41D1564630001B637 /* UIBarButtonItem+BarButtonItem.m */,
-				03487E501D1B67F9003DEAA9 /* UIView+LXHView.h */,
-				03487E511D1B67F9003DEAA9 /* UIView+LXHView.m */,
-				03487E531D1B6F4D003DEAA9 /* LXHTools.h */,
-				03487E541D1B6F4D003DEAA9 /* LXHTools.m */,
-				0343CC2B1D1EA254004DA1D6 /* LXHExternValue.h */,
-				0343CC2C1D1EA254004DA1D6 /* LXHExternValue.m */,
+				035993BC1D22ABA800A7E77C /* Category */,
 			);
-			name = Category;
-			path = "../Main(主要)/Category";
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		035993BC1D22ABA800A7E77C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				035993BD1D22ABA800A7E77C /* LXHExternValue.h */,
+				035993BE1D22ABA800A7E77C /* LXHExternValue.m */,
+				035993BF1D22ABA800A7E77C /* LXHTools.h */,
+				035993C01D22ABA800A7E77C /* LXHTools.m */,
+				035993C11D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.h */,
+				035993C21D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.m */,
+				035993C31D22ABA800A7E77C /* UIImage+Original.h */,
+				035993C41D22ABA800A7E77C /* UIImage+Original.m */,
+				035993C51D22ABA800A7E77C /* UIView+LXHView.h */,
+				035993C61D22ABA800A7E77C /* UIView+LXHView.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		9FD3187C464969EBC9B509A9 /* Frameworks */ = {
@@ -655,13 +651,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03487E5C1D1B7100003DEAA9 /* LXHMineFootCellController.xib in Resources */,
-				035366EE1D140EA000C70F92 /* LaunchScreen.storyboard in Resources */,
 				03487E391D19ABE2003DEAA9 /* LXHSugesTagCell.xib in Resources */,
-				035366EB1D140EA000C70F92 /* Assets.xcassets in Resources */,
 				03487E481D1AD4A9003DEAA9 /* LXHLoginView.xib in Resources */,
 				03487E401D1AABFA003DEAA9 /* LXHLoginViewController.xib in Resources */,
 				0329F9E01D15703B0001B637 /* LXHSettingViewController.xib in Resources */,
 				03487E4F1D1B1870003DEAA9 /* LXHMineViewController.storyboard in Resources */,
+				035993CD1D22ABC500A7E77C /* Assets.xcassets in Resources */,
 				03487E2C1D196D00003DEAA9 /* LXHADViewController.xib in Resources */,
 				03487E311D19AB51003DEAA9 /* LXHSugesTagViewController.xib in Resources */,
 				034AA1561D2053C3001FF475 /* LXHloadMoreDataView.xib in Resources */,
@@ -727,24 +722,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0343CC331D1EEDAC004DA1D6 /* LXHEssenceItem.m in Sources */,
-				035367241D141E5D00C70F92 /* UIImage+Original.m in Sources */,
 				03487E5F1D1B766F003DEAA9 /* LXHMineFootCellItem.m in Sources */,
 				03B90E651D1D6C9B00FBC075 /* LXHVedioViewController.m in Sources */,
 				034AA1541D2053B9001FF475 /* LXHloadMoreDataView.m in Sources */,
+				035993C81D22ABA800A7E77C /* LXHTools.m in Sources */,
 				035366E31D140EA000C70F92 /* AppDelegate.m in Sources */,
 				03487E4B1D1B1408003DEAA9 /* LXHLoginTextField.m in Sources */,
 				0329F9CF1D151C7B0001B637 /* LXHTabBar.m in Sources */,
 				03B90E6E1D1D6CC800FBC075 /* LXHWorldViewController.m in Sources */,
 				03487E301D19AB51003DEAA9 /* LXHSugesTagViewController.m in Sources */,
 				03487E621D1B768E003DEAA9 /* LXHMineFootCellView.m in Sources */,
-				0329F9D51D1564630001B637 /* UIBarButtonItem+BarButtonItem.m in Sources */,
-				0343CC2D1D1EA254004DA1D6 /* LXHExternValue.m in Sources */,
 				03487E461D1AD493003DEAA9 /* LXHLoginView.m in Sources */,
 				03487E5B1D1B7100003DEAA9 /* LXHMineFootCellController.m in Sources */,
 				035367101D1415F000C70F92 /* LXHFriendTrendsViewController.m in Sources */,
 				03487E671D1BF633003DEAA9 /* LXHMineWebKit.m in Sources */,
 				0353670D1D1415D100C70F92 /* LXHEssenceViewController.m in Sources */,
 				0343CC361D1EEEBE004DA1D6 /* LXHEssenceCell.m in Sources */,
+				035993C91D22ABA800A7E77C /* UIBarButtonItem+BarButtonItem.m in Sources */,
+				035993CA1D22ABA800A7E77C /* UIImage+Original.m in Sources */,
+				035993C71D22ABA800A7E77C /* LXHExternValue.m in Sources */,
+				035993CB1D22ABA800A7E77C /* UIView+LXHView.m in Sources */,
 				035366E01D140EA000C70F92 /* main.m in Sources */,
 				035367201D14166A00C70F92 /* LXHTabBarController.m in Sources */,
 				03B90E6B1D1D6CBA00FBC075 /* LXHPictureViewController.m in Sources */,
@@ -752,12 +749,10 @@
 				03B90E711D1D7EE400FBC075 /* LXHHeardViewButton.m in Sources */,
 				03B90E621D1D6C7200FBC075 /* LXHAllDataViewController.m in Sources */,
 				0329F9D21D1559280001B637 /* LXHNavigationController.m in Sources */,
-				03487E551D1B6F4D003DEAA9 /* LXHTools.m in Sources */,
 				03487E341D19ABBD003DEAA9 /* LXHSugesTagItem.m in Sources */,
 				0329F9DF1D15703B0001B637 /* LXHSettingViewController.m in Sources */,
 				03487E2B1D196D00003DEAA9 /* LXHADViewController.m in Sources */,
 				03487E431D1AB4ED003DEAA9 /* LXHLoginBtn.m in Sources */,
-				03487E521D1B67F9003DEAA9 /* UIView+LXHView.m in Sources */,
 				03487E3F1D1AABFA003DEAA9 /* LXHLoginViewController.m in Sources */,
 				035367161D14160300C70F92 /* LXHNewViewController.m in Sources */,
 				035367131D1415FA00C70F92 /* LXHMineViewController.m in Sources */,
@@ -767,18 +762,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		035366EC1D140EA000C70F92 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				035366ED1D140EA000C70F92 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		035366F01D140EA000C70F92 /* Debug */ = {
