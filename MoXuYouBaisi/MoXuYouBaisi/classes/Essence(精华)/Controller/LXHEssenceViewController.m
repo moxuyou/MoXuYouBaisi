@@ -26,10 +26,10 @@
 @property (nonatomic , weak)UIView *headView;
 /** currenHeardViewButton */
 @property (nonatomic , weak)LXHHeardViewButton *currenHeardViewButton;
-/**  */
+/** 导航栏下面的线 */
 @property (nonatomic , weak)UIView *headFootView;
 
-/**  */
+/** 置顶悬浮按钮 */
 @property (nonatomic , strong)UIWindow *windowToTop;
 
 @end
@@ -187,6 +187,12 @@
 /* heardViewButtonClick */
 - (void)heardViewButtonClick:(LXHHeardViewButton *)clickBtn
 {
+    if (self.currenHeardViewButton == clickBtn) {
+        NSLog(@"重复点击了");
+        //发出通知，用于控制点击刷新界面
+        [[NSNotificationCenter defaultCenter] postNotificationName:LXHReflashViewByTabbarClick object:self];
+//        [self ];
+    }
     
     self.currenHeardViewButton.selected = NO;
     
@@ -234,7 +240,10 @@
 
     NSInteger index = self.scrollView.contentOffset.x / self.scrollView.LXHWidth;
     LXHHeardViewButton *selectedBtn = self.headView.subviews[index];
-    
+    //修复左右轻微拖动但还是保持在当前界面的情况不调用点击按钮方法
+    if (selectedBtn == self.currenHeardViewButton) {
+        return;
+    }
     [self heardViewButtonClick:selectedBtn];
     
 }

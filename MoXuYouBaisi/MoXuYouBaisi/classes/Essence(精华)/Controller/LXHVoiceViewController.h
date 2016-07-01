@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^voiceViewLoadMoreDataBlock)(NSString *);
 @interface LXHVoiceViewController : UITableViewController
+
+/**  */
+@property (nonatomic , strong) voiceViewLoadMoreDataBlock loadMoreBlock;
 
 @end

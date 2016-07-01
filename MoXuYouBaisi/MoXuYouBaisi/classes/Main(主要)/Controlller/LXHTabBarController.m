@@ -25,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addPublish) name:@"addPublish" object:nil];
+    //监听Publish控制的弹出
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addPublish) name:LXHShowPresonViewConctroller object:nil];
     
     //设置子控制器
     [self setUpChildViewController];
@@ -121,6 +121,11 @@
 {
     LXHPublishViewController *vc = [[LXHPublishViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    NSLog(@"%@----%@", tabBar, item);
 }
 
 @end
